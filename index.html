@@ -2,9 +2,11 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Minha Landing Page</title>
+  <title>EventGo</title>
 
   <style>
+
+    
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -12,7 +14,7 @@
     }
 
     header {
-      background: #333;
+      background: #000000;
       color: white;
       padding: 15px;
       position: sticky;
@@ -34,9 +36,10 @@
     }
 
     #home {
-      background: #4CAF50;
-      color: white;
-    }
+  background: linear-gradient(135deg, #292929, #a0a0a0);
+  color: white;
+  padding: 100px 20px;
+}
 
     #sobre { background: #f4f4f4; }
     #produto { background: #ddd; }
@@ -44,13 +47,20 @@
     #equipe { background: #ddd; }
 
     button {
-      padding: 10px 20px;
-      border: none;
-      background: black;
-      color: white;
-      cursor: pointer;
-      margin-top: 10px;
-    }
+  padding: 12px 25px;
+  border: none;
+  background: #b7f7f1;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #b7f7f1;
+}
 
     input, textarea {
       padding: 10px;
@@ -61,9 +71,22 @@
 </head>
 
 <body>
+ <a href="#contato" style="
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #25d366;
+color: white;
+padding: 15px;
+border-radius: 50px;
+text-decoration: none;
+font-weight: bold;
+">
+💬 Contato
+</a>
 
   <header>
-    <h1>Meu Site</h1>
+    <h1>EventGo</h1>
     <nav>
       <a href="#sobre">Sobre</a>
       <a href="#produto">Produto</a>
@@ -104,6 +127,8 @@
     <p>Encontre agora o que fará neste fim de semana!</p>
     <button>Acessar agora</button>
   </section>
+
+  
 
   <section id="contato">
     <h2>Contato</h2>
