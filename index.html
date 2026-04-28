@@ -5,68 +5,104 @@
   <title>EventGo</title>
 
   <style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background: #f2f4f8;
+    color: #222;
+  }
 
-    
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
-    }
+  header {
+    background: #0f172a;
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
 
-    header {
-      background: #000000;
-      color: white;
-      padding: 15px;
-      position: sticky;
-      top: 0;
-      text-align: center;
-    }
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
 
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+  nav a:hover {
+    color: #38bdf8;
+  }
 
-    section {
-      padding: 60px;
-      text-align: center;
-      scroll-margin-top: 80px; /* 👈 AQUI ESTÁ A CORREÇÃO */
-    }
+  section {
+    padding: 70px 20px;
+    text-align: center;
+    scroll-margin-top: 80px;
+  }
+  #home {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: white;
+  }
 
-    #home {
-  background: linear-gradient(135deg, #292929, #a0a0a0);
-  color: white;
-  padding: 100px 20px;
-}
+  #sobre {
+    background: white;
+  }
 
-    #sobre { background: #f4f4f4; }
-    #produto { background: #ddd; }
-    #contato { background: #f4f4f4; }
-    #equipe { background: #ddd; }
+  #produto {
+    background: #e2e8f0;
+  }
 
-    button {
-  padding: 12px 25px;
-  border: none;
-  background: #b7f7f1;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: 0.3s;
-}
+  #contato {
+    background: white;
+  }
 
-button:hover {
-  transform: scale(1.05);
-  background: #b7f7f1;
-}
+  #equipe {
+    background: #e2e8f0;
+  }
 
-    input, textarea {
-      padding: 10px;
-      width: 250px;
-      margin: 5px;
-    }
+  button {
+    padding: 12px 25px;
+    border: none;
+    background: #38bdf8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    background: #0ea5e9;
+  }
+
+  input, textarea {
+    padding: 10px;
+    width: 260px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  input:focus, textarea:focus {
+    border-color: #38bdf8;
+  }
+
+  .float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #22c55e;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+</style>
   </style>
 </head>
 
@@ -140,10 +176,10 @@ font-weight: bold;
 
   <section id="equipe">
     <h2>Nossa equipe</h2>
-    <p>Matheus</p>
-    <p>Davi</p>
-    <p>Antônio</p>
-    <p>Diogo</p>
+    <p>Matheus Novaski de Souza</p>
+    <p>Davi Rainert Rosa</p>
+    <p>Antônio Airton de Souza Oliveira Sobrinho</p>
+    <p>Diogo</p>git
   </section>
 
 </body>
