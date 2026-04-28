@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Landing Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px;
+      text-align: center;
+      scroll-margin-top: 80px; /* 👈 AQUI ESTÁ A CORREÇÃO */
+    }
+
+    #home {
+      background: #4CAF50;
+      color: white;
+    }
+
+    #sobre { background: #f4f4f4; }
+    #produto { background: #ddd; }
+    #contato { background: #f4f4f4; }
+    #equipe { background: #ddd; }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: black;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      width: 250px;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Meu Site</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#produto">Produto</a>
+      <a href="#contato">Contato</a>
+      <a href="#equipe">Equipe</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Bem-vindo!</h2>
+    <p>Conheça nosso site e navegue pelas seções</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre nós</h2>
+    <p>
+      Somos uma plataforma criada para conectar você aos melhores eventos de Blumenau.
+      Nosso site permite que locais da cidade anunciem suas programações, enquanto você
+      pode acessar tudo em um só lugar, de forma rápida e prática.
+    </p>
+
+    <p>
+      A ideia é simples: mostrar que sempre tem algo acontecendo. Seja um show, uma festa,
+      um encontro ou qualquer outra atividade, queremos ajudar você a descobrir novas experiências
+      e sair da rotina.
+    </p>
+
+    <p>
+      Nosso objetivo é tornar Blumenau ainda mais movimentada e divertida, conectando pessoas
+      a momentos que fazem a diferença. Aqui você encontra opções para aproveitar seu tempo livre
+      e deixar o tédio de lado.
+    </p>
+    
+  </section>
+
+  <section id="produto">
+    <h2>Nosso site</h2>
+    <p>Encontre agora o que fará neste fim de semana!</p>
+    <button>Acessar agora</button>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <input type="text" placeholder="Seu nome"><br>
+    <input type="email" placeholder="Seu email"><br>
+    <textarea placeholder="Sua mensagem"></textarea><br>
+    <button>Enviar</button>
+  </section>
+
+  <section id="equipe">
+    <h2>Nossa equipe</h2>
+    <p>Matheus</p>
+    <p>Davi</p>
+    <p>Antônio</p>
+    <p>Diogo</p>
+  </section>
+
+</body>
+</html>
